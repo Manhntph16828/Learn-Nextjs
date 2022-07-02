@@ -7,7 +7,7 @@ const Header = (props: Props) => {
     <div>
        <ul className='menu'>
         <li><a href="">menu</a></li>
-        <li><a href="">menu</a></li>
+        <li><a href="/product">menu 2</a></li>
         <li><a href="">menu</a></li>
         <li><a href="">menu</a></li>
       </ul>
