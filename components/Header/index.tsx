@@ -1,15 +1,15 @@
+import Link from 'next/link'
 import React from 'react'
-
+import style from "../Header/Header.module.scss"
 type Props = {}
 
 const Header = (props: Props) => {
   return (
     <div>
-       <ul className='menu'>
-        <li><a href="">menu</a></li>
-        <li><a href="/product">menu 2</a></li>
-        <li><a href="">menu</a></li>
-        <li><a href="">menu</a></li>
+      <ul className={style.menu}>
+        <li><Link href="/" className={style.menu__link}>Home</Link></li>
+        <li><Link href="/products" className={style.menu__link}>Product</Link></li>
+        <li><Link href="/about" className={style.menu__link}>About</Link></li>
       </ul>
     </div>
   )
